@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DyuBomje</string>
+    <string name="welcome">Welcome to DyuBomj</string>
+    <string name="start_loading">To start downloading contacts, click on the button below</string>
+    <string name="list_of_your_contacts">List of your contacts</string>
+    <string name="load_contacts">Load contacts</string>
+    <string name="type_to_search">Type to search</string>
+</resources>

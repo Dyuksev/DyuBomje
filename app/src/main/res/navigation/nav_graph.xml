@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/start_fragment">
+
+    <fragment
+        android:id="@+id/start_fragment"
+        android:name="com.dyucorp.dyubomje.ui.start.StartFragment"
+        android:label="StartFragment"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_contactListFragment"
+            app:destination="@id/contactListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/contactListFragment"
+        android:name="com.dyucorp.dyubomje.ui.contactList.ContactListFragment"
+        android:label="contactListFragment"
+        tools:layout="@layout/fragment_contact_list">
+        <argument
+            android:name="contacts"
+            app:argType="com.dyucorp.dyubomje.repository.local.ContactModel[]" />
+    </fragment>
+</navigation>
